@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stock Trading Game</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+    <div id="summary">
+        <h2>Portfolio Summary</h2>
+        <p>Available Cash: $<span id="current-balance">500</span></p>
+        <p>Net Liquidation Value: $<span id="net-liq">500</span></p>
+        <div id="timer">Prices update in <span id="countdown">10</span> seconds</div>
+        <dv id="charts">
+            <canvas id="net-liq-chart"></canvas>
+            <canvas id="stock-chart"></canvas>
+        </dv>
+    </div>
+    <div id="content">
+        <table id="stock-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Owned</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div id="transactions">
+            <h2>Transactions</h2>
+            <ul id="transaction-list"></ul>
+        </div>
+    </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
+

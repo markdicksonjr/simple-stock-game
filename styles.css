@@ -1,0 +1,140 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 20px;
+    width: 75%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button.sell {
+    background-color: #f44336;
+}
+
+#summary {
+    margin-bottom: 20px;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#stock-table,
+#transactions {
+    flex: 1;
+    padding: 0 10px;
+}
+
+#stock-table table,
+#transactions ul {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#stock-table th,
+#stock-table td,
+#transactions li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+#stock-table th:last-child,
+#stock-table td:last-child {
+    text-align: center;
+}
+
+#transactions {
+    width: 300px;
+}
+
+#transactions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#transactions li {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#transactions li:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+#transactions li:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+#timer {
+    margin-top: 20px;
+}
+
+#charts {
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+}
+
+#charts canvas {
+    flex: 1 0 45%; /* This will make each canvas take up 45% of the space, leaving 10% for the space in between */
+    height: 500px; /* Adjust this value as needed */
+}
